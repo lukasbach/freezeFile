@@ -1,0 +1,21 @@
+.headerbar {
+	width: 100%;
+	height: @headerbar-height;
+	background-color: @baseColor;
+}
+
+.headerbar-right {
+	float: right;
+	padding: 10px;
+}
+
+.headerbar-icobtn {
+	color: white;
+	font-size: 19px;
+	margin-left: 5px;
+
+	&:hover {
+		color: lighten(@baseColor, 60%);
+		cursor: pointer;
+	}
+}
