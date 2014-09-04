@@ -1,5 +1,5 @@
-function openWindow($element) {
-	var windowname = $element.data("window");
+function openWindow(windowname) {
+	//var windowname = $element.data("window");
 
 	$.ajax({
 		url: "ajax/window." + windowname + ".php",
@@ -42,6 +42,6 @@ function closeWindows() {
 
 $(document).ready(function() {
 	$(".js-open-window").click(function() {
-		openWindow($(this));
+		openWindow($(this).data("window"));
 	});
 });
